@@ -1,0 +1,46 @@
+.config {
+	margin-bottom: 10px;
+}
+
+.config input {
+	width: 50px;
+}
+.game-field {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	border: 2px solid black;
+}
+
+.cell {
+	border: 1px solid #eee;
+}
+
+.snake {
+	background-color: green;
+	background-color: green;
+		box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+		/* Зеленое свечение */
+}
+
+.apple::before {
+	content: '🍎';
+	font-size: 16px;
+}
+
+.game-over {
+	color: red;
+	font-size: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.score,
+.record {
+	margin-top: 10px;
+}
