@@ -139,7 +139,7 @@ window.onload = function () {
 			});
 		}
 		_updateSpeed() {
-			this.currentSpeed = Math.max(100, this.baseSpeed - this.score * 50); // Минимальная скорость 100ms
+			this.currentSpeed = Math.max(500, this.baseSpeed - this.score * 50); // Минимальная скорость 500ms
 			clearInterval(this.gameLoop); // Очищаем текущий интервал
 			this.gameLoop = setInterval(() => this._move(), this.currentSpeed); // Устанавливаем новый интервал
 		}
